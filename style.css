@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 80vh;
+    width: 100vw;
+    background-color: rgb(112, 215, 255);
+
+}
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    margin: 10% 10%;
+    width: 80%;
+    height: 80vh;
+    background-color: rgb(223, 217, 217);
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px rgba(128, 128, 252, 0.2);
+    overflow: hidden;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5% 5%;
+    flex-direction: row;
+    height: 40%;
+    width: 90%;
+}
+
+.container1 .budget, .expenses {
+    background-color: #f1f1f1;
+    padding: 15px 15px;
+    width: 45%;
+    margin: 10px 0;
+    text-align: left;
+    line-height: 40px;
+    font-size: 24px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.container1 input {
+    height: 35px;
+    width: 97%;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+    border: 0.5px solid rgb(206, 201, 201);
+    border-radius: 5px;
+}
+
+.container1 button {
+
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px 0;
+    background: rgb(6, 129, 245);
+    border: 0;
+    border-radius: 5px;
+ }
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1% 5%;
+    padding: 1% 0;
+    width: 90%;
+    height: 25%;
+    line-height: 180%;
+    text-align: center;
+    background: rgb(6, 129, 245);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.container2 div {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.container2 div p {
+    font-size: 22px;
+    margin: 10px 10px;
+}
+    
+.container3 {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5%;
+    padding: 1% 5%;
+    width: 90%;
+    height: 70%;
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+.container3 p {
+    font-size: 24px;
+    padding: 15px 15px;
+}
+
+.expenceTable {
+    display: flex;
+    flex-direction: column;
+    list-style: none; 
+    margin: 0 5%;
+    line-height: 60px; 
+}
+
+.expenceTable div {
+    display: inline;
+    flex-direction: row;
+}
+
+.tableRow {
+    display: flex;
+    justify-content: center;
+    border-left-style: solid;
+    border-color: rgb(111, 111, 252);
+    padding: 0 40px;
+    margin: 10px;
+}
+
+.col-1 {
+    flex-basis: 50%;
+  }
+  .col-2 {
+    flex-basis: 60%;
+  }
+  .fa-solid {
+    flex-basis: 10%;
+    transform: translate(80%, 20%);
+    cursor: pointer;
+    padding: 2px;
+  }
