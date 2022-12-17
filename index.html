@@ -1,73 +1,78 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lista</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f60f4f2999.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lista</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f60f4f2999.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
+  <section class="box__container">
     <div class="container">
-        <div class="row1">
-            <div class="budget">
-                <h1>Budget</h1>
-                <input type="text" class="enterTotalAmount">
-                <br><button class="setBudget">Set Budget</button>
-            </div>
-            <div class="expenses">
-                <h1>Expenses</h1>
-                <input type="text" class="product">
-                <br><input type="number" class="costProduct">
-                <br><button class="checkAmount">Check Amount</button>
-            </div>
+      <div class="row1">
+        <div class="budget">
+          <h2>Budget</h2>
+          <input type="text" class="enterTotalAmount">
+          <button class="setBudget">Set Budget</button>
         </div>
-        <div class="row2">
-            <div>
-                <h2>Total Budget</h2>
-                <div class="totalBudget">8000</div>
-            </div>
-            <div>
-                <h2>Expenses</h2>
-                <div class="totalExpenses">6500</div>
-            </div>
-            <div>
-                <h2>Balance</h2>
-                <div class="balance">1500</div>
-            </div>
+        <div class="expenses">
+          <h2>Expenses</h2>
+          <input type="text" class="product">
+          <input type="number" class="costProduct">
+          <button class="checkAmount">Check Amount</button>
         </div>
-        <div class="row3">
-            <h1>Expence List</h1>
-            <ul class="expenceTable">
-                <li class="tableRow">
-                    <div class="col col-1" data-label="Product">Żelazko</div>
-                    <div class="col col-2" data-label="Cost">1200</div>
-                    <i class="editIcon fa-solid fa-pen-to-square"></i>
-                    <i class="deleteIcon fa-solid fa-trash"></i>
-                </li>
-                <li class="tableRow">
-                    <div class="col col-1" data-label="Product">Biurko</div>
-                    <div class="col col-2" data-label="Cost">2200</div>
-                    <i class="editIcon fa-solid fa-pen-to-square"></i>
-                    <i class="deleteIcon fa-solid fa-trash"></i>
-                </li>
-                <li class="tableRow">
-                    <div class="col col-1" data-label="Product">Szafa</div>
-                    <div class="col col-2" data-label="Cost">5200</div>
-                    <i class="editIcon fa-solid fa-pen-to-square"></i>
-                    <i class="deleteIcon fa-solid fa-trash"></i>
-                </li>
+      </div>
+      <div class="row2">
+        <div>
+          <h3>Total Budget</h3>
+          <div class="totalBudget">8000</div>
+        </div>
+        <div>
+          <h3>Expenses</h3>
+          <div class="totalExpenses">6500</div>
+        </div>
+        <div>
+          <h3>Balance</h3>
+          <div class="balance">1500</div>
+        </div>
+      </div>
+      <div class="row3">
+        <h2>Expence List</h2>
+        <ul class="expenceTable">
+          <li class="list-item">
+            <div class="col col-1" data-label="Product">Żelazko</div>
+            <div class="col col-2" data-label="Cost">1200</div>
+            <button class="btn-icon" type="button"><i class="editIcon fa-solid fa-pen-to-square"></i></button>
+            <button class="btn-icon" type="button"><i class="deleteIcon fa-solid fa-trash"></i></button>
+          </li>
+          <li class="list-item">
+            <div class="col col-1" data-label="Product">Biurko</div>
+            <div class="col col-2" data-label="Cost">2200</div>
+            <button class="btn-icon" type="button"><i class="editIcon fa-solid fa-pen-to-square"></i></button>
+            <button class="btn-icon" type="button"><i class="deleteIcon fa-solid fa-trash"></i></button>
+          </li>
+          <li class="list-item">
+            <div class="col col-1" data-label="Product">Szafa</div>
+            <div class="col col-2" data-label="Cost">5200</div>
+            <button class="btn-icon" type="button"><i class="editIcon fa-solid fa-pen-to-square"></i></button>
+            <button class="btn-icon" type="button"><i class="deleteIcon fa-solid fa-trash"></i></button>
+          </li>
 
-                
-            </ul>
-                  
-            </div>
 
-        </div>
+        </ul>
+
+      </div>
 
     </div>
-    <script src="app.js"></script>
+
+    </div>
+  </section>
+  <script src="app.js"></script>
 </body>
+
 </html>
