@@ -19,63 +19,58 @@ const listDisplay = document.querySelector(".list-item");
 
 // wrzucić do Funkcji rzeczy które się powtarzają czyli button edit i delete
 
+function createTable() {
 
 
-function liLine() {
+    function showDiv1() {
+        const name1 = document.createElement("div");
+        name1.setAttribute('class', 'col col-1');
+        name1.setAttribute('data-label', "Product");
+        btnLi.appendChild(name1);
+    };
+    
+    function showDiv2() {
+        const name2 = document.createElement("div");
+        name2.setAttribute('class', 'col col-2');
+        name2.setAttribute('data-label', "Cost");
+        btnLi.appendChild(name2);
+    };
+    
+    function showButton(editIconButton, deleteIconButton) {    
+        const btnEdit = document.createElement("button");
+        btnEdit.setAttribute('class', 'btn-icon btn-icon-edit');
+        btnEdit.setAttribute('type', 'button');
+        btnLi.appendChild(btnEdit);
+        
+        const btnDelete = document.createElement("button");
+        btnDelete.setAttribute('class', 'btn-icon btn-icon-delete');
+        btnDelete.setAttribute('type', 'button');
+        btnLi.appendChild(btnDelete);
+    
+        const icon1 = document.createElement("i");
+        icon1.setAttribute('class', editIconButton);  
+        btnEdit.appendChild(icon1);
+
+        const icon2 = document.createElement("i");
+        icon2.setAttribute('class', deleteIconButton);      
+        btnDelete.appendChild(icon2);
+    };
+    
+    function showIdTable() {
+        const tableList = document.getElementById("idTable");
+        tableList.setAttribute('class', 'expenseTable')
+        tableList.appendChild(btnLi);
+        // btnLi.innerHTML = "Click Me"
+    };   
+
     const btnLi = document.createElement("li");
     btnLi.setAttribute('class', 'list-item');
-};
 
-function liLineDiv1() {
-    const name1 = document.createElement("div");
-    name1.setAttribute('class', 'col col-1');
-    name1.setAttribute('data-label', "Product");
-    btnLi.appendChild(name1);
-};
-
-function liLineDiv2() {
-    const name2 = document.createElement("div");
-    name2.setAttribute('class', 'col col-2');
-    name2.setAttribute('data-label', "Cost");
-    btnLi.appendChild(name2);
-};
-
-function liLineButton1(editIconButton) {    
-    const btnEdit = document.createElement("button");
-    btnEdit.setAttribute('class', 'btn-icon btn-icon-edit');
-    btnEdit.setAttribute('type', 'button');
-    btnLi.appendChild(btnEdit);
-
-    const icon1 = document.createElement("i");
-    icon1.setAttribute('class', editIconButton);
-    btnEdit.appendChild(icon1);
-};
-
-function liLineButton2(deleteIconButton) {
-    const btnDelete = document.createElement("button");
-    btnDelete.setAttribute('class', 'btn-icon btn-icon-delete');
-    btnDelete.setAttribute('type', 'button');
-    btnLi.appendChild(btnDelete);
-
-    const icon2 = document.createElement("i");
-    icon2.setAttribute('class', deleteIconButton);      
-    btnDelete.appendChild(icon2);
-};
-
-function liLineIdTable() {
-    const tableList = document.getElementById("idTable");
-    tableList.setAttribute('class', 'expenseTable')
-    tableList.appendChild(btnLi);
-    // btnLi.innerHTML = "Click Me"
-};    
-
-function createTable() {
-    liLine();
-    liLineDiv1();
-    liLineDiv2();
-    liLineButton1('editIcon fa-solid fa-pen-to-square');
-    liLineButton2('deleteIcon fa-solid fa-trash');
-    liLineIdTable();
+    showDiv1();
+    showDiv2();
+    showButton('editIcon fa-solid fa-pen-to-square','deleteIcon fa-solid fa-trash');
+    // liLineButton2('deleteIcon fa-solid fa-trash');
+    showIdTable();
 }
 
 createTable(); 
@@ -84,11 +79,10 @@ createTable();
     
 
 
-
-function clickButton() {
-    // alert('wcisnięto przycisk');    
-}
-btnCheckAmount.addEventListener('click', clickButton);
+// function clickButton() {
+//     // alert('wcisnięto przycisk');    
+// }
+// btnCheckAmount.addEventListener('click', clickButton);
 
 
 // ROW 1
